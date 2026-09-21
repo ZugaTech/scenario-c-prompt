@@ -1,8 +1,8 @@
-# Scenario C — BNH Governance Document Engine
+# Scenario C — NBH Governance Document Engine
 
-System prompt engineering for BNH's institutional document drafting system
+System prompt engineering for NBH's institutional document drafting system
 (System 6). Converts bullet-point staff input into first-draft governance
-documents at BNH's institutional publishing standard.
+documents at NBH's institutional publishing standard.
 
 ---
 
@@ -10,7 +10,7 @@ documents at BNH's institutional publishing standard.
 
 | File | Contents |
 |------|----------|
-| `BNH_Scenario_C_System_Prompt.md` | Full system prompt · Role Mandate sample run · Design rationale |
+| `NBH_Scenario_C_System_Prompt.md` | Full system prompt · Role Mandate sample run · Design rationale |
 
 The system prompt, sample run, and rationale are consolidated in one file for
 ease of assessment review. Sections are clearly delineated.
@@ -21,7 +21,7 @@ ease of assessment review. Sections are clearly delineated.
 
 - Accepts: Document Type, Subject, Source Bullets, and optional Reference /
   Classification / Date fields.
-- Produces: a first-draft Role Mandate or Board Note in BNH's institutional
+- Produces: a first-draft Role Mandate or Board Note in NBH's institutional
   format, with every fact traceable to a specific source bullet.
 - Refuses: to invent facts, figures, names, or dates not present in the
   source bullets — missing fields become `[NOT SPECIFIED IN INPUT — CONFIRM
@@ -31,7 +31,7 @@ ease of assessment review. Sections are clearly delineated.
 
 ## Sample Run 2 — Board Note
 
-The primary sample run (Role Mandate) is in `BNH_Scenario_C_System_Prompt.md`.
+The primary sample run (Role Mandate) is in `NBH_Scenario_C_System_Prompt.md`.
 Below is a second sample demonstrating the Board Note structure.
 
 **Input:**
@@ -39,7 +39,7 @@ Below is a second sample demonstrating the Board Note structure.
 ```
 Document Type: BOARD NOTE
 Subject: Q2 2026 Subsidiary Performance — Energy Division
-Document Reference: BNH-BN-2026-Q2-001
+Document Reference: NBH-BN-2026-Q2-001
 Classification: BOARD CONFIDENTIAL
 Date: June 2026
 From: Head of AI & Digital Systems
@@ -58,7 +58,7 @@ Source Bullets:
 **Output:**
 
 ```
-BRENDAN NICHOLAS HOLDINGS — BOARD NOTE
+NORTHBRIDGE HOLDINGS — BOARD NOTE
 To: The Board
 From: Head of AI & Digital Systems
 Subject: Q2 2026 Subsidiary Performance — Energy Division
@@ -86,14 +86,14 @@ meet the 99.5% uptime target in Q3 2026.
 We recommend the Board note the procurement delay and request a revised
 timeline from the Energy Division General Manager by 15 July 2026.
 
-Brendan Nicholas Holdings BNH-BN-2026-Q2-001 | BOARD CONFIDENTIAL June 2026
+Northbridge Holdings NBH-BN-2026-Q2-001 | BOARD CONFIDENTIAL June 2026
 ```
 
 ---
 
 ## Design Decisions
 
-The primary rationale is in `BNH_Scenario_C_System_Prompt.md` (Section 3).
+The primary rationale is in `NBH_Scenario_C_System_Prompt.md` (Section 3).
 
 The second most important decision is the word-count constraint for Board
 Notes (120–250 words). A Board Note exists to reduce reading burden, not to
